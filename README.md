@@ -11,7 +11,7 @@ Model layer is implemented with API [ru.eamosov.n26.api.StatsService](docs/index
    - [StatsServiceImpl](src/main/java/ru/eamosov/n26/impl/StatsServiceImpl.java) - core logic which calculates statistics
    - [StatsServiceRest](src/main/java/ru/eamosov/n26/impl/StatsServiceRest.java) - REST client used for testing purpose 
 
-Controller layer is implemented with two REST controllers in ru.eamosov.n26.rest package which registered as endpoints in single Jetty handler.
+Controller layer is implemented with two REST controllers in [ru.eamosov.n26.rest](src/main/java/ru/eamosov/n26/rest) package which registered as endpoints in single Jetty handler.
 
 Building and testing:   
 mvn clean install
