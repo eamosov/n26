@@ -14,10 +14,14 @@ Model layer is implemented as API [ru.eamosov.n26.api.StatsService](https://eamo
 Controller layer is implemented as two REST controllers in [ru.eamosov.n26.rest](src/main/java/ru/eamosov/n26/rest) package which are registered as endpoints in single Jetty handler [JettyRestHandler](src/main/java/ru/eamosov/n26/jetty/JettyRestHandler.java).
 
 Building and testing:   
-mvn clean install
+```
+$ mvn clean install
+```
 
 Running from command line:  
-mvn exec:java  
+```
+$ mvn exec:java  
+```
 
 The program starts HTTP server at port 8080 and provides REST interface:  
 http://localhost:8080/staticstics  
