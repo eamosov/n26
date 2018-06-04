@@ -27,7 +27,7 @@ public class StatsServiceImplTest extends StatsServiceTest {
     }
 
     @Test
-    public void testMakeBackets() {
+    public void testStatsServiceImpl() {
 
         StatsServiceImpl s = new StatsServiceImpl(3);
         s.makeBuckets(10000);
@@ -62,5 +62,9 @@ public class StatsServiceImplTest extends StatsServiceTest {
 
         assertThat(s.statistics(18200), equalTo(new Statistics(2.0, 1.0, 1.0, 1.0, 2)));
         assertThat(s.statistics(20000), equalTo(new Statistics(1.0, 1.0, 1.0, 1.0, 1)));
+
+        assertThat(s.transaction(20100, new Transaction(19, 18300)), equalTo(EmptyResult.SUCCESS));
+        assertThat(s.statistics(20200), equalTo(new Statistics(20.0, 10.0, 19.0, 1.0, 2)));
+
     }
 }
