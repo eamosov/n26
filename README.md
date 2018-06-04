@@ -24,7 +24,7 @@ $ mvn exec:java
 ```
 
 The program starts HTTP server at port 8080 and provides REST interface:  
-http://localhost:8080/staticstics  
+http://localhost:8080/statistics  
 http://localhost:8080/transaction  
 
 Example:  
