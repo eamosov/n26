@@ -23,7 +23,7 @@ public class TransactionController extends AbstractRestController<EmptyResult> {
     }
 
     @Override
-    public EmptyResult handle(String target, Request baseRequest) throws Exception {
+    public EmptyResult handle(Request baseRequest) {
 
         final Transaction transaction = gson.fromJson(new InputStreamReader(baseRequest.getHttpInput()), Transaction.class);
 

@@ -29,8 +29,8 @@ import java.util.Arrays;
  * StatsService implementation through HTTP REST and JSON serialization
  */
 public class StatsServiceRest implements StatsService {
-    private String host;
-    private int port;
+    private final String host;
+    private final int port;
 
     private final Gson gson = new GsonBuilder().setPrettyPrinting().create();
 

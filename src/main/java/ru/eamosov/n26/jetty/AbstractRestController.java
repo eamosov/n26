@@ -20,5 +20,5 @@ public abstract class AbstractRestController<R> {
 
     public abstract String getPath();
 
-    public abstract R handle(String target, Request baseRequest) throws Exception;
+    public abstract R handle(Request baseRequest);
 }

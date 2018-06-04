@@ -36,7 +36,7 @@ public class JettyRestHandler extends AbstractHandler {
             response.setCharacterEncoding("UTF-8");
 
             try {
-                Object ret = controller.handle(target, baseRequest);
+                Object ret = controller.handle(baseRequest);
                 if (ret instanceof EmptyResult) {
                     response.setStatus(((EmptyResult) ret).code);
                 } else {
